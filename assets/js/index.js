@@ -60,7 +60,7 @@ function renderAvatar(user) {
     $('#welcome').html('欢迎 &nbsp;&nbsp;' + name);
     if (user.user_pic !== null) {
         // 3.1渲染图片头像
-        $('.layui-nav-img').attr('src', user_pic).show()
+        $('.layui-nav-img').attr('src', user.user_pic).show()
         $(".text-avatar").hide()
     } else {
         //  3.2渲染文本图像
