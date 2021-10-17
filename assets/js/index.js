@@ -7,7 +7,7 @@ $(function() {
     // 点击按钮实现退出功能
     $('#btnLogout').on('click', function() {
         //  提示用户是否确认退出
-        layer.confirm('is not', { icon: 3, title: '提示' },
+        layer.confirm('是否退出', { icon: 3, title: '提示' },
             function(index) {
                 // 1清空本地内存中的token
                 localStorage.removeItem('token')
